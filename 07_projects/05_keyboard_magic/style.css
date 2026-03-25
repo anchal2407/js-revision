@@ -1,0 +1,79 @@
+/*did it just for fun*/
+      table,
+      th,
+      td {
+        border: 1px solid #e7e7e7;
+      }
+      .project {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+      }
+
+      .color {
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+      }
+      .keys {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover td {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+
+/* Highlight key value */
+td:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffd700;
+}
+
+table {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
